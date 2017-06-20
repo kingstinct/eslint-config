@@ -26,7 +26,7 @@ module.exports = {
   rules: {
     'class-methods-use-this': 0,
     'global-require': 0,
-    'lodash-fp/use-fp': 'error',
+    'lodash-fp/use-fp': 2,
     'no-confusing-arrow': 0,
     'no-nested-ternary': 0,
     'no-return-assign': 0,
@@ -40,7 +40,6 @@ module.exports = {
     'react-native/no-unused-styles': 2,
     'react-native/split-platform-components': 2,
     'react/jsx-filename-extension': 0,
-    'react/jsx-no-bind': 0,
     'react/prefer-stateless-function': 0,
     'react/sort-comp': 0
   },
