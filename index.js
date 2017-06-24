@@ -41,7 +41,12 @@ module.exports = {
     'react-native/split-platform-components': 2,
     'react/jsx-filename-extension': 0,
     'react/prefer-stateless-function': 0,
-    'react/sort-comp': 0
+    'react/sort-comp': 0,
+    quotes: [
+      'error',
+      'single',
+      { avoidEscape: true, allowTemplateLiterals: true }
+    ]
   },
   env: {
     'jest/globals': true
