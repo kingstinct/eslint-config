@@ -42,7 +42,10 @@ module.exports = {
     'react/jsx-filename-extension': 0,
     'react/prefer-stateless-function': 0,
     'react/sort-comp': 0,
-    quotes: [
+    'jsx-a11y/accessible-emoji': 0,
+    'quote-props': ['error', 'consistent-as-needed'],
+    'indent': ['error', 2, { VariableDeclarator: { var: 2, let: 2, const: 3 } }],
+    'quotes': [
       'error',
       'single',
       { avoidEscape: true, allowTemplateLiterals: true },
