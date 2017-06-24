@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kingstinct-react-native",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Eslint configuration for React-native based on Airbnb with some great tweaks",
   "main": "index.js",
   "repository": "https://github.com/robertherber/eslint-config-kingstinct-react-native",
@@ -10,7 +10,7 @@
     "test": "yarn run eslint && yarn run prettier-eslint-compatibility-check",
     "eslint": "eslint index.js",
     "prettier-eslint-compatibility-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "prepublish": "yarn test"
+    "prepublish": "yarn run eslint"
   },
   "keywords": [
     "eslint",
