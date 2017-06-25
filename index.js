@@ -7,7 +7,6 @@ module.exports = {
     'prettier/flowtype',
     'prettier/react',
   ],
-  installedESLint: true,
   plugins: [
     'react',
     'jsx-a11y',
@@ -20,9 +19,6 @@ module.exports = {
     'json',
     'prettier',
   ],
-  ecmaFeatures: {
-    jsx: true,
-  },
   rules: {
     'class-methods-use-this': 0,
     'comma-dangle': ['error', 'always-multiline'],
