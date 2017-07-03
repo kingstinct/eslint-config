@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kingstinct-react-native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Eslint configuration for React-native based on Airbnb with some great tweaks",
   "main": "index.js",
   "repository": "https://github.com/robertherber/eslint-config-kingstinct-react-native",
@@ -37,8 +37,8 @@
     "babel-eslint": "^7.2.3",
     "eslint": "3",
     "eslint-config-airbnb": "15",
-    "eslint-plugin-flowtype": "^2.33.0",
-    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.1",
     "eslint-plugin-jest": "^20.0.3",
     "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-jsx-a11y": "5.0.3",
