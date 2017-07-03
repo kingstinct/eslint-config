@@ -5,10 +5,9 @@ This is the base eslint config I use for React Native. It's based on the popular
 * flowtype
 * lodash-fp
 * promise
-* prettier
 * react-native
 
-I've also made some minor changes to the rules, so if you've got other preferences you might want to override some rules. I highly recommend you to use eslint, prettier and flowtype with plugins for your texteditor/IDE.
+I've also made some minor changes to the rules, so if you've got other preferences you might want to override some rules. I highly recommend you to use eslint, flowtype with plugins for your texteditor/IDE.
 
 The two main principles are to catch errors early on and to boost productivity (so for example I've disabled react/sort-comp as it's not fixed automatically yet). Two of the choices I've made that you might need to configure are:
 *  **Enforce non-native promises**, I recommend using [bluebird](http://bluebirdjs.com/docs/getting-started.html) for more features.
@@ -81,4 +80,4 @@ The two main principles are to catch errors early on and to boost productivity (
 
 ## Running tests
 
-You can run tests with `npm test`. It will run the lint config on the project itself and also check for compatibility issues between eslint and prettier.
+You can run tests with `npm test`. It will run the lint config on the project itself.

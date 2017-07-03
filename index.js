@@ -3,9 +3,6 @@ module.exports = {
     'airbnb',
     'plugin:jest/recommended',
     'plugin:flowtype/recommended',
-    'prettier',
-    'prettier/flowtype',
-    'prettier/react',
   ],
   plugins: [
     'react',
@@ -17,7 +14,6 @@ module.exports = {
     'promise',
     'jest',
     'json',
-    'prettier',
   ],
   rules: {
     'class-methods-use-this': 0,
@@ -29,7 +25,6 @@ module.exports = {
     'no-return-assign': 0,
     'no-unused-expressions': 0,
     'one-var': 0,
-    'prettier/prettier': 0,
     'promise/catch-or-return': 2,
     'promise/no-native': 2,
     'react-native/no-color-literals': 0,
