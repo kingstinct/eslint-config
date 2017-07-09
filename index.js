@@ -18,7 +18,7 @@ module.exports = {
   rules: {
     'class-methods-use-this': 0,
     'comma-dangle': ['error', 'always-multiline'],
-    'global-require': 0,
+    'global-require': 2,
     'lodash-fp/use-fp': 2,
     'no-confusing-arrow': 0,
     'no-nested-ternary': 0,
@@ -34,6 +34,7 @@ module.exports = {
     'react/prefer-stateless-function': 0,
     'react/sort-comp': 0,
     'jsx-a11y/accessible-emoji': 0,
+    'jsx-quotes': ['error', 'prefer-single'],
     'quote-props': ['error', 'consistent-as-needed'],
     'indent': ['error', 2, { VariableDeclarator: { var: 2, let: 2, const: 3 } }],
     'quotes': [
