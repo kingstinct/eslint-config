@@ -1,3 +1,4 @@
+[ ![Codeship Status for robertherber/eslint-config-kingstinct-react-native](https://app.codeship.com/projects/3c9221e0-7d0d-0135-0c1c-5a32fb5927cf/status?branch=master)](https://app.codeship.com/projects/245793)
 ## Usage
 
 This is the base eslint config I use for React Native. It's based on the popular Airbnb-config with a few plugin additions:
