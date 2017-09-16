@@ -31,7 +31,7 @@ module.exports = {
     'react-native/no-unused-styles': 2,
     'react-native/split-platform-components': 2,
     'react/jsx-filename-extension': 0,
-    'react/prefer-stateless-function': 0,
+    'react/prefer-stateless-function': ['error', { ignorePureComponents: true }],
     'react/sort-comp': 0,
     'jsx-a11y/accessible-emoji': 0,
     'jsx-quotes': ['error', 'prefer-single'],
