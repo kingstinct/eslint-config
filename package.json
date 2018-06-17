@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kingstinct-react-native",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Eslint configuration for React-native based on Airbnb with some great tweaks",
   "main": "index.js",
   "repository": "https://github.com/robertherber/eslint-config-kingstinct-react-native",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "test": "eslint .",
-    "prepublish": "npm test",
+    "prepublishOnly": "npm test",
     "prepush": "npm test"
   },
   "keywords": [

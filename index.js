@@ -85,8 +85,18 @@ module.exports = {
     window: true,
   },
   settings: {
-    flowtype: {
+    'flowtype': {
       onlyFilesWithFlowAnnotation: true,
+    },
+    'import/resolver': {
+      node: {
+        extensions: [
+          '.js',
+          '.jsx',
+          '.ios.js',
+          '.android.js',
+        ],
+      },
     },
   },
 };
