@@ -3,7 +3,6 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:promise/recommended',
-    'plugin:lodash-fp/recommended',
     'airbnb',
     'plugin:jest/recommended',
     'plugin:flowtype/recommended',
