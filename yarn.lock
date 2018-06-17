@@ -194,6 +194,13 @@ babel-eslint@^8.2.3:
     eslint-scope "~3.7.1"
     eslint-visitor-keys "^1.0.0"
 
+babel-runtime@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
+  dependencies:
+    core-js "^2.4.0"
+    regenerator-runtime "^0.11.0"
+
 babylon@7.0.0-beta.44:
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-7.0.0-beta.44.tgz#89159e15e6e30c5096e22d738d8c0af8a0e8ca1d"
@@ -318,6 +325,10 @@ contains-path@^0.1.0:
 core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
+
+core-js@^2.4.0:
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -503,6 +514,17 @@ eslint-module-utils@^2.2.0:
   dependencies:
     debug "^2.6.8"
     pkg-dir "^1.0.0"
+
+eslint-plugin-eslint-plugin@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-plugin/-/eslint-plugin-eslint-plugin-1.4.0.tgz#382dc6692a741a52072d5f3fff5dacdcf291ef49"
+
+eslint-plugin-flowtype-errors@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype-errors/-/eslint-plugin-flowtype-errors-3.6.0.tgz#5782994261e925aed1320630146636e88e4ad553"
+  dependencies:
+    babel-runtime "^6.26.0"
+    slash "^2.0.0"
 
 eslint-plugin-flowtype@^2.49.3:
   version "2.49.3"
@@ -740,6 +762,10 @@ flat-cache@^1.2.1:
     del "^2.0.2"
     graceful-fs "^4.1.2"
     write "^0.2.1"
+
+flow-bin@^0.74.0:
+  version "0.74.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.74.0.tgz#8017bb00efb37cbe8d81fbb7f464038bde06adc9"
 
 foreach@^2.0.5:
   version "2.0.5"
@@ -1287,6 +1313,10 @@ readable-stream@^2.2.2:
     string_decoder "~1.0.0"
     util-deprecate "~1.0.1"
 
+regenerator-runtime@^0.11.0:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
+
 regexpp@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-1.1.0.tgz#0e3516dd0b7904f413d2d4193dce4618c3a689ab"
@@ -1388,6 +1418,10 @@ shelljs@0.3.x:
 signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
+
+slash@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/slash/-/slash-2.0.0.tgz#de552851a1759df3a8f206535442f5ec4ddeab44"
 
 slice-ansi@1.0.0:
   version "1.0.0"

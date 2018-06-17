@@ -1,11 +1,28 @@
 [ ![Codeship Status for robertherber/eslint-config-kingstinct-react-native](https://app.codeship.com/projects/3c9221e0-7d0d-0135-0c1c-5a32fb5927cf/status?branch=master)](https://app.codeship.com/projects/245793)
 ## Usage
 
+### v2.0
+
+Just releasing version 2.0 of this eslint setup. Two major changes are that the installation is easier now. No peerdeps to care about (well - of course you still need to make sure you've got eslint). The other thing is the flowtype-errors plugin which will actually run a flow server and lints that directly. To use it make sure you've got flow-bin installed - and if not go ahead and disable the rules `flowtype-errors/show-errors` and `flowtype-errors/show-warnings` by doing this:
+```
+    { ...,
+        rules: { ...,
+          'flowtype-errors/show-errors': 0,
+          'flowtype-errors/show-warnings': 0,
+        }
+    }
+```
+    
+
 This is the base eslint config I use for React Native. It's based on the popular Airbnb-config with a few plugin additions:
-* jest
 * flowtype
+* flowtype-errors (which runs flow-bin)
+* import
+* jest
+* json
 * lodash-fp
 * promise
+* react
 * react-native
 
 I've also made some minor changes to the rules, so if you've got other preferences you might want to override some rules. I highly recommend you to use eslint, flowtype with plugins for your texteditor/IDE.
@@ -34,50 +51,7 @@ The two main principles are to catch errors early on and to boost productivity (
 
 ### eslint-config-kingstinct-react-native
 
-1. Install the correct versions of each package, which are listed by the command:
 
-  ```sh
-  npm info "eslint-config-kingstinct-react-native@latest" peerDependencies
-  ```
-
-  Linux/OSX users can run (if you're using NPM)
-
-  ```sh
-  (
-    export PKG=eslint-config-kingstinct-react-native;
-    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
-  )
-  ```
-
-  or (if you're using yarn)
-
-  ```sh
-  (
-    export PKG=eslint-config-kingstinct-react-native;
-    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev "$PKG@latest"
-  )
-  ```
-
-  Which produces and runs a command like:
-
-  ```sh
-  npm install --save-dev eslint-config-kingstinct-react-native eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
-  ```
-
-  Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
-
-  ```sh
-  npm install -g install-peerdeps
-  install-peerdeps --dev eslint-config-kingstinct-react-native
-  ```
-
-  The cli will produce and run a command like:
-
-  ```sh
-  npm install --save-dev eslint-config-kingstinct-react-native eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
-  ```
-
-2. Add `"extends": "kingstinct-react-native"` to your .eslintrc
 
 ## Running tests
 

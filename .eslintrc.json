@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "./index.js",
+    "plugin:eslint-plugin/recommended"
+  ],
+  "plugins": [
+    "eslint-plugin"
+  ]
+}
