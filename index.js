@@ -44,6 +44,7 @@ module.exports = {
     'no-useless-computed-key': 2,
     'one-var': 0,
     'promise/catch-or-return': 1,
+    'promise/always-return': 1,
     'promise/no-native': 1,
     'quote-props': ['error', 'consistent-as-needed'],
     'quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
