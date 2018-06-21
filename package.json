@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kingstinct-react-native",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Eslint configuration for React-native based on Airbnb with some great tweaks",
   "main": "index.js",
   "repository": "https://github.com/robertherber/eslint-config-kingstinct-react-native",

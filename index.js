@@ -59,7 +59,7 @@ module.exports = {
     'react/prefer-stateless-function': [1, { ignorePureComponents: true }],
     'react/prop-types': [2, { skipUndeclared: true }],
     'react/sort-comp': 0,
-    'sort-vars': 2,
+    'sort-vars': 0,
     'no-mixed-operators': [
       'error',
       {
