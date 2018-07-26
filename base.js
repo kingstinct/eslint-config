@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:promise/recommended',
-    'airbnb',
+    'airbnb-base',
     'plugin:jest/recommended',
     'plugin:flowtype/recommended',
   ],
