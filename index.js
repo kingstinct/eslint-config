@@ -1,53 +1,14 @@
 module.exports = {
   extends: [
-    'eslint:recommended',
+    './base.js',
     'plugin:react/recommended',
-    'plugin:promise/recommended',
-    'airbnb',
-    'plugin:jest/recommended',
-    'plugin:flowtype/recommended',
   ],
   plugins: [
     'react',
     'jsx-a11y',
-    'import',
     'react-native',
-    'flowtype',
-    'flowtype-errors',
-    'lodash-fp',
-    'promise',
-    'jest',
-    'json',
   ],
   rules: {
-    'class-methods-use-this': 1,
-    'comma-dangle': ['error', 'always-multiline'],
-    'flowtype-errors/show-errors': 2,
-    'flowtype-errors/show-warnings': 1,
-    'global-require': 2,
-    'import/max-dependencies': [1, { max: 15 }],
-    'import/newline-after-import': [1, { count: 2 }],
-    'import/no-cycle': [2, { maxDepth: 2 }],
-    'import/no-useless-path-segments': 2,
-    'import/order': ['error', { 'newlines-between': 'always', 'groups': [['builtin', 'external'], ['parent', 'sibling', 'index']] }],
-    'import/prefer-default-export': 1,
-    'indent': ['error', 2, { VariableDeclarator: { var: 2, let: 2, const: 3 } }],
-    'jsx-a11y/accessible-emoji': 0,
-    'jsx-quotes': ['error', 'prefer-single'],
-    'lodash-fp/use-fp': 2,
-    'no-confusing-arrow': 0,
-    'no-extra-parens': ['error', 'all', { ignoreJSX: 'all', enforceForArrowConditionals: false, nestedBinaryExpressions: false }],
-    'no-nested-ternary': 0,
-    'no-return-assign': 0,
-    'no-underscore-dangle': 1,
-    'no-unused-expressions': 0,
-    'no-useless-computed-key': 2,
-    'one-var': 0,
-    'promise/always-return': 1,
-    'promise/catch-or-return': 1,
-    'promise/no-native': 1,
-    'quote-props': ['error', 'consistent-as-needed'],
-    'quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
     'react-native/no-color-literals': 0,
     'react-native/no-inline-styles': 1,
     'react-native/no-unused-styles': 2,
@@ -60,23 +21,6 @@ module.exports = {
     'react/prefer-stateless-function': [1, { ignorePureComponents: true }],
     'react/prop-types': [2, { skipUndeclared: true }],
     'react/sort-comp': 0,
-    'sort-vars': 0,
-    'no-mixed-operators': [
-      'error',
-      {
-        groups: [
-          ['+', '-', '*', '/', '%', '**'],
-          ['&', '|', '^', '~', '<<', '>>', '>>>'],
-          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
-          ['&&', '||'],
-          ['in', 'instanceof'],
-        ],
-        allowSamePrecedence: true,
-      },
-    ],
-  },
-  env: {
-    'jest/globals': true,
   },
   globals: {
     fetch: true,
@@ -85,10 +29,7 @@ module.exports = {
     window: true,
   },
   settings: {
-    'flowtype': {
-      onlyFilesWithFlowAnnotation: true,
-    },
-    'import/resolver': {
+    'import/resolver': { // to allow for libraries with only .ios.js and .android.js exports without plain .js export
       node: {
         extensions: [
           '.js',
