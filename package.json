@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-kingstinct-react-native",
-  "version": "2.0.9",
-  "description": "Eslint configuration for React-native based on Airbnb with some great tweaks",
+  "version": "3.0.0",
+  "description": "ESLint configuration for React-native based on Airbnb with some great tweaks",
   "main": "index.js",
   "repository": "https://github.com/robertherber/eslint-config-kingstinct-react-native",
   "author": "Robert Herber",
@@ -20,36 +20,37 @@
     "styleguide"
   ],
   "dependencies": {
-    "babel-eslint": "8",
+    "babel-eslint": "10",
     "eslint-config-airbnb": "17",
     "flow-bin": "*"
   },
   "peerDependencies": {
     "eslint": "5",
-    "eslint-plugin-flowtype": "2",
-    "eslint-plugin-flowtype-errors": "3",
+    "eslint-plugin-flowtype": "3",
+    "eslint-plugin-flowtype-errors": "4",
     "eslint-plugin-import": "2",
-    "eslint-plugin-jest": "21",
+    "eslint-plugin-jest": "22",
     "eslint-plugin-json": "1",
     "eslint-plugin-jsx-a11y": "6",
     "eslint-plugin-lodash-fp": "2",
-    "eslint-plugin-promise": "3",
+    "eslint-plugin-promise": "4",
     "eslint-plugin-react": "7",
-    "eslint-plugin-react-native": "3"
+    "eslint-plugin-react-native": "3",
+    "flow-bin": "*"
   },
   "devDependencies": {
     "eslint": "5",
-    "eslint-plugin-eslint-plugin": "1",
-    "eslint-plugin-flowtype": "2",
-    "eslint-plugin-flowtype-errors": "3",
+    "eslint-plugin-eslint-plugin": "2",
+    "eslint-plugin-flowtype": "3",
+    "eslint-plugin-flowtype-errors": "4",
     "eslint-plugin-import": "2",
-    "eslint-plugin-jest": "21",
+    "eslint-plugin-jest": "22",
     "eslint-plugin-json": "1",
     "eslint-plugin-jsx-a11y": "6",
     "eslint-plugin-lodash-fp": "2",
-    "eslint-plugin-promise": "3",
+    "eslint-plugin-promise": "4",
     "eslint-plugin-react": "7",
     "eslint-plugin-react-native": "3",
-    "husky": "0"
+    "husky": "2"
   }
 }
