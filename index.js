@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unused-modules */
 module.exports = {
   extends: [
     'airbnb',
@@ -8,11 +9,14 @@ module.exports = {
     'react',
     'jsx-a11y',
     'react-native',
+    'react-hooks',
   ],
   rules: {
     'react-native/no-color-literals': 0,
     'react-native/no-inline-styles': 1,
     'react-native/no-unused-styles': 2,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
     'react-native/split-platform-components': 1,
     'react/boolean-prop-naming': ['error', { rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+', propTypeNames: ['bool', 'mutuallyExclusiveTrueProps'] }],
     'react/jsx-closing-tag-location': 0,
@@ -22,6 +26,7 @@ module.exports = {
     'react/prefer-stateless-function': [1, { ignorePureComponents: true }],
     'react/prop-types': [2, { skipUndeclared: true }],
     'react/sort-comp': 0,
+    'import/no-unused-modules': [1, { unusedExports: true, missingExports: true }],
   },
   globals: {
     fetch: true,
@@ -42,3 +47,4 @@ module.exports = {
     },
   },
 };
+/* eslint-enable import/no-unused-modules */
