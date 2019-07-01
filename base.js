@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unused-modules */
 module.exports = {
   extends: [
     'eslint:recommended',
@@ -65,3 +66,4 @@ module.exports = {
     },
   },
 };
+/* eslint-enable import/no-unused-modules */
