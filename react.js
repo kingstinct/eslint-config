@@ -26,7 +26,6 @@ module.exports = {
     'react/prefer-stateless-function': [1, { ignorePureComponents: true }],
     'react/prop-types': [2, { skipUndeclared: true }],
     'react/sort-comp': 0,
-    'import/no-unused-modules': [1, { unusedExports: true, missingExports: true }],
   },
   globals: {
     fetch: true,

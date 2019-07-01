@@ -26,6 +26,7 @@ module.exports = {
     'import/newline-after-import': [1, { count: 2 }],
     'import/no-cycle': [2, { maxDepth: 2 }],
     'import/no-useless-path-segments': 2,
+    'import/no-unused-modules': [1, { unusedExports: true, missingExports: true }],
     'import/order': ['error', { 'newlines-between': 'always', 'groups': [['builtin', 'external'], ['parent', 'sibling', 'index']] }],
     'import/prefer-default-export': 1,
     'indent': ['error', 2, { VariableDeclarator: { var: 2, let: 2, const: 3 } }],
