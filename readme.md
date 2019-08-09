@@ -1,4 +1,11 @@
 [ ![Codeship Status for robertherber/eslint-config-kingstinct-react-native](https://app.codeship.com/projects/3c9221e0-7d0d-0135-0c1c-5a32fb5927cf/status?branch=master)](https://app.codeship.com/projects/245793)
+## Principles
+
+1. As many autofixable rules as possible, because enforcing standards that don't require extra developer effort is (almost) always a good idea.
+2. Don't error on non-fixable errors (that don't risk causing unforeseen errors).
+
+If you see something that could be improved based on these principles, please submit a pull request! :)
+
 ## Usage
 
 ### v2.0
@@ -12,7 +19,7 @@ Just releasing version 2 of this eslint setup. I added the flowtype-errors plugi
         }
     }
 ```
-    
+
 
 This is the base eslint config I use for React Native. It's based on the popular Airbnb-config with a few plugin additions:
 * flowtype
