@@ -1,6 +1,10 @@
 /* eslint-disable import/no-unused-modules */
 module.exports = {
+  parser: '@typescript-eslint/parser',
   extends: [
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'eslint:recommended',
     'plugin:promise/recommended',
     'airbnb-base',
@@ -55,6 +59,9 @@ module.exports = {
         allowSamePrecedence: true,
       },
     ],
+  },
+  parserOptions: {
+    project: './tsconfig.json',
   },
 };
 /* eslint-enable import/no-unused-modules */
