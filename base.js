@@ -5,12 +5,9 @@ module.exports = {
     'plugin:promise/recommended',
     'airbnb-base',
     'plugin:jest/recommended',
-    'plugin:flowtype/recommended',
   ],
   plugins: [
     'import',
-    'flowtype',
-    'flowtype-errors',
     'lodash-fp',
     'promise',
     'jest',
@@ -19,8 +16,6 @@ module.exports = {
   rules: {
     'class-methods-use-this': 1,
     'comma-dangle': ['error', 'always-multiline'],
-    'flowtype-errors/show-errors': 2,
-    'flowtype-errors/show-warnings': 1,
     'global-require': 2,
     'import/max-dependencies': [1, { max: 15 }],
     'import/newline-after-import': [1, { count: 2 }],
@@ -44,7 +39,6 @@ module.exports = {
     'one-var': 0,
     'promise/always-return': 1,
     'promise/catch-or-return': 1,
-    'promise/no-native': 1,
     'quote-props': ['error', 'consistent-as-needed'],
     'quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
     'sort-vars': 0,
@@ -61,11 +55,6 @@ module.exports = {
         allowSamePrecedence: true,
       },
     ],
-  },
-  settings: {
-    flowtype: {
-      onlyFilesWithFlowAnnotation: true,
-    },
   },
 };
 /* eslint-enable import/no-unused-modules */

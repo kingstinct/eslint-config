@@ -4,7 +4,6 @@ const hello = {
   },
 };
 
-
 const { a } = hello.obj;
 
 console.log(a);
