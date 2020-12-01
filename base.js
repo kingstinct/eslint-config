@@ -2,15 +2,17 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
+    'airbnb-base',
+    'eslint:recommended',
+    'plugin:promise/recommended',
+    'plugin:jest/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'eslint:recommended',
-    'plugin:promise/recommended',
-    'airbnb-base',
-    'plugin:jest/recommended',
+    'plugin:import/typescript',
   ],
   plugins: [
+    '@typescript-eslint',
     'import',
     'lodash-fp',
     'promise',
@@ -18,13 +20,28 @@ module.exports = {
     'json',
   ],
   rules: {
+    'import/no-unused-modules': [1, { unusedExports: true }],
+    '@typescript-eslint/no-unused-vars': ['error'],
+    'no-multiple-empty-lines': ['error', { max: 2 }],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
+    'no-unused-vars': 0,
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
     'class-methods-use-this': 1,
     'comma-dangle': ['error', 'always-multiline'],
     'global-require': 2,
     'import/max-dependencies': [1, { max: 15 }],
     'import/newline-after-import': [1, { count: 2 }],
     'import/no-cycle': [2, { maxDepth: 2 }],
-    'import/no-unused-modules': [1, { unusedExports: true, missingExports: true }],
     'import/no-useless-path-segments': 2,
     'import/order': ['error', { 'newlines-between': 'always', 'groups': [['builtin', 'external'], ['parent', 'sibling', 'index']] }],
     'import/prefer-default-export': 1,
@@ -62,6 +79,20 @@ module.exports = {
   },
   parserOptions: {
     project: './tsconfig.json',
+  },
+  settings: {
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      typescript: {
+        project: './tsconfig.json',
+      },
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
 };
 /* eslint-enable import/no-unused-modules */
