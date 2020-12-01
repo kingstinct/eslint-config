@@ -20,7 +20,7 @@ module.exports = {
     'json',
   ],
   rules: {
-    'import/no-unused-modules': [1, { unusedExports: true }],
+    'import/no-unused-modules': [1, { missingExports: true }],
     '@typescript-eslint/no-unused-vars': ['error'],
     'no-multiple-empty-lines': ['error', { max: 2 }],
     'no-use-before-define': 'off',
@@ -54,7 +54,7 @@ module.exports = {
     'no-extra-parens': ['error', 'all', { ignoreJSX: 'all', enforceForArrowConditionals: false, nestedBinaryExpressions: false }],
     'no-nested-ternary': 0,
     'no-return-assign': 0,
-    'no-underscore-dangle': 1,
+    'no-underscore-dangle': ['error', { allow: ['_id'] }],
     'no-unused-expressions': 0,
     'no-useless-computed-key': 2,
     'one-var': 0,
