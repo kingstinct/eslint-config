@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kingstinct-react-native",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "ESLint configuration for React-native based on Airbnb with some great tweaks",
   "main": "index.js",
   "repository": "https://github.com/robertherber/eslint-config-kingstinct-react-native",
@@ -36,7 +36,8 @@
     "eslint-plugin-promise": "*",
     "eslint-plugin-react": "*",
     "eslint-plugin-react-hooks": "*",
-    "eslint-plugin-react-native": "*"
+    "eslint-plugin-react-native": "*",
+    "jest": "*"
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",
