@@ -1,3 +1,7 @@
+# eslint-config-kingstinct-react-native
+
+![CI Status](https://github.com/robertherber/eslint-config-kingstinct-react-native/workflows/Node.js%20CI/badge.svg)
+
 ## Principles
 
 1. As many autofixable rules as possible, because enforcing standards that don't require extra developer effort is (almost) always a good idea.
@@ -6,8 +10,6 @@
 If you see something that could be improved based on these principles, please submit a pull request! :)
 
 ## Usage
-
-### v4.0
 
 This is the base eslint config I use for React Native. It's based on the popular Airbnb-config with a few plugin additions:
 
@@ -83,7 +85,7 @@ The two main principles are to catch errors early on and to boost productivity (
 
 2. Add `"extends": "kingstinct-react-native"` to your .eslintrc
 
-### Previous versions
+## Previous versions
 
 Previous versions (before 4.0) used flow for type checking.
 
