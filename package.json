@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kingstinct-react-native",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "ESLint configuration for React-native based on Airbnb with some great tweaks",
   "main": "index.js",
   "author": {
@@ -9,8 +9,8 @@
     "url": "https://kingstinct.com"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/robertherber/react-native-telegraph"
+    "type": "git",
+    "url": "https://github.com/robertherber/react-native-telegraph"
   },
   "license": "MIT",
   "scripts": {
