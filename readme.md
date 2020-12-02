@@ -1,5 +1,3 @@
-[Codeship Status for robertherber/eslint-config-kingstinct-react-native](https://app.codeship.com/projects/3c9221e0-7d0d-0135-0c1c-5a32fb5927cf/status?branch=master)](<https://app.codeship.com/projects/245793>)
-
 ## Principles
 
 1. As many autofixable rules as possible, because enforcing standards that don't require extra developer effort is (almost) always a good idea.
@@ -9,7 +7,7 @@ If you see something that could be improved based on these principles, please su
 
 ## Usage
 
-### v2.0
+### v4.0
 
 This is the base eslint config I use for React Native. It's based on the popular Airbnb-config with a few plugin additions:
 
@@ -85,6 +83,12 @@ The two main principles are to catch errors early on and to boost productivity (
 
 2. Add `"extends": "kingstinct-react-native"` to your .eslintrc
 
+### Previous versions
+
+Previous versions (before 4.0) used flow for type checking.
+
 ## Running tests
 
 You can run tests with `npm test`. It will run the lint config on the project itself.
+
+[Made by Kingstinct AB](https://kingstinct.com)
