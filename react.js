@@ -20,7 +20,6 @@ module.exports = {
     'react-native/split-platform-components': 1,
     'react/boolean-prop-naming': ['error', { rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+', propTypeNames: ['bool', 'mutuallyExclusiveTrueProps'] }],
     'react/jsx-closing-tag-location': 0,
-    'no-void': 0,
     'react/jsx-filename-extension': 0,
     'react/no-multi-comp': [1, { ignoreStateless: true }],
     'react/no-unused-state': 0,
