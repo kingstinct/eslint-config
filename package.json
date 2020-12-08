@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/robertherber/react-native-telegraph"
+    "url": "https://github.com/robertherber/eslint-config-kingstinct-react-native"
   },
   "license": "MIT",
   "scripts": {
@@ -24,7 +24,9 @@
     "config",
     "airbnb",
     "javascript",
-    "styleguide"
+    "styleguide",
+    "typescript",
+    "react"
   ],
   "dependencies": {
     "babel-eslint": "10",
@@ -44,7 +46,8 @@
     "eslint-plugin-react": "7",
     "eslint-plugin-react-hooks": "4",
     "eslint-plugin-react-native": "3",
-    "jest": "*"
+    "jest": "*",
+    "typescript": "*"
   },
   "devDependencies": {
     "@types/jest": "26",
