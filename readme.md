@@ -1,6 +1,6 @@
-# eslint-config-kingstinct-react-native
+# @kingstinct/eslint
 
-![CI Status](https://github.com/robertherber/eslint-config-kingstinct-react-native/workflows/Node.js%20CI/badge.svg)
+![CI Status](https://github.com/kingstinct/eslint/workflows/Node.js%20CI/badge.svg)
 
 ## Principles
 
@@ -17,8 +17,6 @@ This is the base eslint config I use for React Native. It's based on the popular
 * import
 * jest
 * json
-* lodash-fp
-* promise
 * react
 * react-native
 
@@ -43,14 +41,14 @@ The two main principles are to catch errors early on and to boost productivity (
 1. Install the correct versions of each package, which are listed by the command:
 
   ```sh
-  npm info "eslint-config-kingstinct-react-native@latest" peerDependencies
+  npm info "@kingstinct/eslint@latest" peerDependencies
   ```
 
   Linux/OSX users can run (if you're using NPM)
 
   ```sh
   (
-    export PKG=eslint-config-kingstinct-react-native;
+    export PKG=@kingstinct/eslint;
     npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
   )
   ```
@@ -59,7 +57,7 @@ The two main principles are to catch errors early on and to boost productivity (
 
   ```sh
   (
-    export PKG=eslint-config-kingstinct-react-native;
+    export PKG=@kingstinct/eslint;
     npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev "$PKG@latest"
   )
   ```
@@ -67,30 +65,30 @@ The two main principles are to catch errors early on and to boost productivity (
   Which produces and runs a command like:
 
   ```sh
-  npm install --save-dev eslint-config-kingstinct-react-native eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
+  npm install --save-dev @kingstinct/eslint eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
   ```
 
   Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
 
   ```sh
   npm install -g install-peerdeps
-  install-peerdeps --dev eslint-config-kingstinct-react-native
+  install-peerdeps --dev @kingstinct/eslint
   ```
 
   The cli will produce and run a command like:
 
   ```sh
-  npm install --save-dev eslint-config-kingstinct-react-native eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
+  npm install --save-dev @kingstinct/eslint eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
   ```
 
-2. Add `"extends": "kingstinct-react-native"` to your .eslintrc
-
-## Previous versions
-
-Previous versions (before 4.0) used flow for type checking.
+2. Add `"extends": "@kingstinct/eslint"` to your .eslintrc (or @kingstinct/eslint/react or @kingstinct/eslint/react-native depending on your environment)
 
 ## Running tests
 
 You can run tests with `npm test`. It will run the lint config on the project itself.
+
+## Contributing
+
+Let's try to keep general rules in `base.js`, general react rules in `react.js` and react-native specific rules in `react-native.js`
 
 [Made by Kingstinct AB](https://kingstinct.com)

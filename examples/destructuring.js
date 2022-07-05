@@ -2,8 +2,8 @@ const hello = {
   obj: {
     a: 'b',
   },
-};
+}
 
-const { a } = hello.obj;
+const { a } = hello.obj
 
-console.log(a);
+console.log(a)

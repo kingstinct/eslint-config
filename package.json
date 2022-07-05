@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-kingstinct-react-native",
+  "name": "@kingstinct/eslint",
   "version": "4.0.6",
   "description": "ESLint configuration for React-native based on Airbnb with some great tweaks",
   "main": "index.js",
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/robertherber/eslint-config-kingstinct-react-native"
+    "url": "https://github.com/kingstinct/eslint"
   },
   "license": "MIT",
   "scripts": {
-    "test": "eslint .",
+    "test": "eslint . && tsc --noEmit",
     "prepublishOnly": "npm test",
-    "prepush": "npm test"
+    "prepare": "husky install"
   },
   "keywords": [
     "eslint",
@@ -29,43 +29,42 @@
     "react"
   ],
   "dependencies": {
-    "babel-eslint": "10",
-    "eslint-config-airbnb": "18"
+    "eslint-config-airbnb": "19"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "*",
-    "@typescript-eslint/parser": "*",
-    "eslint": "7",
-    "eslint-import-resolver-typescript": "2",
+    "@types/jest": "28",
+    "@typescript-eslint/eslint-plugin": "5",
+    "@typescript-eslint/parser": "5",
+    "eslint": "8",
+    "eslint-import-resolver-typescript": "3",
+    "eslint-plugin-eslint-plugin": "4",
+    "eslint-plugin-functional": "^4.2.1",
     "eslint-plugin-import": "2",
-    "eslint-plugin-jest": "24",
-    "eslint-plugin-json": "2",
+    "eslint-plugin-jest": "26",
+    "eslint-plugin-json": "3",
     "eslint-plugin-jsx-a11y": "6",
-    "eslint-plugin-lodash-fp": "2",
-    "eslint-plugin-promise": "4",
     "eslint-plugin-react": "7",
     "eslint-plugin-react-hooks": "4",
-    "eslint-plugin-react-native": "3",
+    "eslint-plugin-react-native": "4",
     "jest": "*",
     "typescript": "*"
   },
   "devDependencies": {
-    "@types/jest": "26",
-    "@typescript-eslint/eslint-plugin": "4",
-    "@typescript-eslint/parser": "4",
-    "eslint": "7",
-    "eslint-import-resolver-typescript": "2",
-    "eslint-plugin-eslint-plugin": "2",
+    "@types/jest": "28",
+    "@typescript-eslint/eslint-plugin": "5",
+    "@typescript-eslint/parser": "5",
+    "eslint": "8",
+    "eslint-import-resolver-typescript": "3",
+    "eslint-plugin-eslint-plugin": "4",
+    "eslint-plugin-functional": "^4.2.1",
     "eslint-plugin-import": "2",
-    "eslint-plugin-jest": "24",
-    "eslint-plugin-json": "2",
+    "eslint-plugin-jest": "26",
+    "eslint-plugin-json": "3",
     "eslint-plugin-jsx-a11y": "6",
-    "eslint-plugin-lodash-fp": "2",
-    "eslint-plugin-promise": "4",
     "eslint-plugin-react": "7",
     "eslint-plugin-react-hooks": "4",
-    "eslint-plugin-react-native": "3",
-    "husky": "4",
+    "eslint-plugin-react-native": "4",
+    "husky": "8",
     "jest": "*",
     "react": "*",
     "typescript": "^4.1.2"

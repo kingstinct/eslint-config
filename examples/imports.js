@@ -1,2 +1,2 @@
-import '../package.json';
-import './declarations-indentation.ios';
+import '../package.json'
+import './declarations-indentation.ios'
