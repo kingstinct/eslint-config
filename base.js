@@ -40,7 +40,6 @@ module.exports = {
     'import/order': ['error', { 'newlines-between': 'always', 'groups': [['builtin', 'external'], ['parent', 'sibling', 'index'], ['type']] }],
     'import/prefer-default-export': 0,
     'indent': 0,
-
     'jsx-quotes': ['error', 'prefer-single'],
     'linebreak-style': ['error', 'unix'],
     'max-len': ['warn', { code: 200 }],
@@ -58,7 +57,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['test/**', '**/*.test.ts', '**/*.test.tsx'],
+      files: ['test/**', 'tests/**', '__tests__/**', 'test/**', '**/*.test.ts', '**/*.test.tsx', '**/*.test.js', '**/*.test.jsx'],
       plugins: ['jest'],
       extends: ['plugin:jest/recommended'],
       rules: {
