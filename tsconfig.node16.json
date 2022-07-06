@@ -1,20 +1,15 @@
 {
-  "include": ["src", "typings"],
-  "exclude": ["node_modules"],
   "compilerOptions": {
-      "allowJs": true,
-      "assumeChangesOnlyAffectDirectDependencies": true,
-      "esModuleInterop": true,
-      "importsNotUsedAsValues": "error",
-      "lib": ["ES2021"],
-      "module": "commonjs",
-      "noUncheckedIndexedAccess": true,
-      "outDir": "build",
-      "removeComments": true,
-      "resolveJsonModule": true,
-      "skipLibCheck": true,
-      "strictNullChecks": true,
-      "target": "ES2021",
-      "typeRoots" : ["./node_modules/@types", "./typings"]
-  }
+    "noEmit": true,
+    "allowJs": true,
+    "importsNotUsedAsValues": "error",
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "lib": ["ES2021"],
+    "target": "ES2021",
+    "skipLibCheck": true,
+    "strictNullChecks": true
+  },
+  "exclude": ["node_modules"]
 }
