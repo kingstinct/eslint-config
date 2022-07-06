@@ -33,11 +33,16 @@ module.exports = {
     window: true,
   },
   settings: {
+    'react': {
+      version: 'detect',
+    },
     'import/resolver': { // to allow for libraries with only .ios.js and .android.js exports without plain .js export
       node: {
         extensions: [
           '.js',
           '.jsx',
+          '.ts',
+          '.tsx',
         ],
       },
     },

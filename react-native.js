@@ -13,12 +13,6 @@ module.exports = {
     'react-native/no-unused-styles': 1,
     'react-native/split-platform-components': 1,
   },
-  /* globals: {
-    fetch: true,
-    __DEV__: true,
-    __OFFLINE__: true,
-    window: true,
-  }, */
   env: {
     'react-native/react-native': true,
   },

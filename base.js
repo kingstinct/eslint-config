@@ -9,7 +9,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:import/typescript',
     'plugin:json/recommended',
-    'plugin:jest/recommended',
   ],
   rules: {
     '@typescript-eslint/explicit-function-return-type': 0,
@@ -41,7 +40,7 @@ module.exports = {
     'import/order': ['error', { 'newlines-between': 'always', 'groups': [['builtin', 'external'], ['parent', 'sibling', 'index'], ['type']] }],
     'import/prefer-default-export': 0,
     'indent': 0,
-    'jest/expect-expect': 2,
+
     'jsx-quotes': ['error', 'prefer-single'],
     'linebreak-style': ['error', 'unix'],
     'max-len': ['warn', { code: 200 }],
@@ -57,13 +56,18 @@ module.exports = {
     'quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
     'semi': ['error', 'never'],
   },
+  overrides: [
+    {
+      files: ['test/**', '**/*.test.ts', '**/*.test.tsx'],
+      plugins: ['jest'],
+      extends: ['plugin:jest/recommended'],
+      rules: {
+        'jest/expect-expect': 2,
+      },
+    },
+  ],
   parserOptions: {
     project: './tsconfig.json',
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
   },
 }
 /* eslint-enable import/no-unused-modules */
