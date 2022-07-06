@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unused-modules, functional/immutable-data */
 module.exports = {
   plugins: ['@typescript-eslint', 'import', 'json', 'functional'],
   extends: [
@@ -24,6 +23,7 @@ module.exports = {
     '@typescript-eslint/no-unsafe-call': 0,
     '@typescript-eslint/no-unsafe-member-access': 0,
     '@typescript-eslint/no-unsafe-return': 0,
+    '@typescript-eslint/consistent-type-imports': 2,
     '@typescript-eslint/no-use-before-define': ['error', { functions: true, classes: true, variables: false }],
     '@typescript-eslint/restrict-template-expressions': 0,
     '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
@@ -57,11 +57,13 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['test/**', 'tests/**', '__tests__/**', 'test/**', '**/*.test.ts', '**/*.test.tsx', '**/*.test.js', '**/*.test.jsx'],
-      plugins: ['jest'],
-      extends: ['plugin:jest/recommended'],
+      files: ['**/test/**', '**/tests/**', '**/__tests__/**', 'test/**', '**/*.test.ts', '**/*.test.tsx', '**/*.test.js', '**/*.test.jsx'],
+      extends: ['./jest.js'],
+    },
+    {
+      files: ['babel.config.js', 'metro.config.js', 'jest.config.js'],
       rules: {
-        'jest/expect-expect': 2,
+        'functional/immutable-data': 0,
       },
     },
   ],
@@ -69,4 +71,3 @@ module.exports = {
     project: './tsconfig.json',
   },
 }
-/* eslint-enable import/no-unused-modules */

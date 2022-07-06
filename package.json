@@ -14,7 +14,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "eslint . && tsc --noEmit",
+    "test": "yarn lint",
+    "lint": "yarn lint-only && tsc --noEmit",
+    "lint-only": "eslint .",
     "prepublishOnly": "npm test",
     "prepare": "husky install"
   },
@@ -47,7 +49,8 @@
     "eslint-plugin-react-native": ">=4",
     "eslint-plugin-react-native-a11y": ">=3",
     "jest": ">=26",
-    "typescript": ">=4"
+    "typescript": ">=4",
+    "expo": ">=45"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-jsx-a11y": {
@@ -63,6 +66,9 @@
       "optional": true
     },
     "eslint-plugin-react-native-a11y": {
+      "optional": true
+    },
+    "expo": {
       "optional": true
     }
   },
@@ -81,7 +87,8 @@
     "eslint-plugin-react": "7",
     "eslint-plugin-react-hooks": "4",
     "eslint-plugin-react-native": "4",
-    "eslint-plugin-react-native-a11y": "^3.2.1",
+    "eslint-plugin-react-native-a11y": "3",
+    "expo": "45",
     "husky": "8",
     "jest": "*",
     "react": "*",

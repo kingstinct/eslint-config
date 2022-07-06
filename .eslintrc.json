@@ -5,5 +5,13 @@
   ],
   "plugins": [
     "eslint-plugin"
+  ],
+  "overrides": [
+    {
+      "files": ["jest.js", "react.js", "react-native.js", "base.js", "expo.js", "index.js", "node16.js"],
+      "rules": {
+        "functional/immutable-data": 0
+      }
+    }
   ]
 }

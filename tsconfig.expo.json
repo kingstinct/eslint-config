@@ -1,13 +1,12 @@
 {
+  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "noEmit": true,
     "allowJs": true,
     "importsNotUsedAsValues": "error",
     "noUncheckedIndexedAccess": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "strictNullChecks": true,
-    "strict": true
+    "strictNullChecks": true
   },
   "exclude": ["node_modules"]
 }

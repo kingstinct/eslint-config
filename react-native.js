@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unused-modules, functional/immutable-data  */
 module.exports = {
   extends: [
     './react.js',
@@ -40,4 +39,3 @@ module.exports = {
     },
   },
 }
-/* eslint-enable import/no-unused-modules */
