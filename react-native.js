@@ -15,9 +15,6 @@ module.exports = {
   env: {
     'react-native/react-native': true,
   },
-  parserOptions: {
-    project: './tsconfig.json',
-  },
   settings: {
     'import/resolver': { // to allow for libraries with only .ios.js and .android.js exports without plain .js export
       node: {

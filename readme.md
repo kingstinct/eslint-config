@@ -1,4 +1,4 @@
-# @eslint-config-kingstinct
+# eslint-config-kingstinct
 
 ![CI Status](https://github.com/kingstinct/eslint/workflows/Node.js%20CI/badge.svg)
 
@@ -11,30 +11,18 @@ If you see something that could be improved based on these principles, please su
 
 ## Usage
 
-This is the base eslint config I use for React Native. It's based on the popular Airbnb-config with a few plugin additions:
+This is the base eslint config we use at Kingstinct. It's based on the popular Airbnb-config with a few plugin additions:
 
 * TypeScript
 * import
 * jest
 * json
-* react
-* react-native
+* react (use kingstinct/react)
+* react-native (use kingstinct/react-native)
 
 I've also made some minor changes to the rules, so if you've got other preferences you might want to override some rules. I highly recommend you to use eslint, flowtype with plugins for your texteditor/IDE.
 
 The two main principles are to catch errors early on and to boost productivity (so for example I've disabled react/sort-comp as it's not fixed automatically yet).
-
-* **Enforce [lodash-fp](https://github.com/lodash/lodash/wiki/FP-Guide)** instead of lodash.
-  * **Why?** Many lodash methods are mutable which might cause hard-to-debug side effects, especially when using redux . With lodash-fp you're safe.
-  * **Disable** if you really want to use the mutable lodash flavour (not recommended). Add this to your .eslintrc:
-
-    ```
-    { ...,
-        rules: { ...,
-          'lodash-fp/use-fp': 0
-        }
-    }
-    ```
 
 ## Install
 
