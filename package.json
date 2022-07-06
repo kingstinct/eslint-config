@@ -29,24 +29,42 @@
     "react"
   ],
   "dependencies": {
-    "eslint-config-airbnb": "19"
+    "eslint-config-airbnb": ">=19"
   },
   "peerDependencies": {
-    "@types/jest": "28",
-    "@typescript-eslint/eslint-plugin": "5",
-    "@typescript-eslint/parser": "5",
-    "eslint": "8",
-    "eslint-import-resolver-typescript": "3",
-    "eslint-plugin-functional": "^4.2.1",
-    "eslint-plugin-import": "2",
-    "eslint-plugin-jest": "26",
-    "eslint-plugin-json": "3",
-    "eslint-plugin-jsx-a11y": "6",
-    "eslint-plugin-react": "7",
-    "eslint-plugin-react-hooks": "4",
-    "eslint-plugin-react-native": "4",
-    "jest": "*",
-    "typescript": "*"
+    "@types/jest": ">=28",
+    "@typescript-eslint/eslint-plugin": ">=5",
+    "@typescript-eslint/parser": ">=5",
+    "eslint": ">=8",
+    "eslint-import-resolver-typescript": ">=3",
+    "eslint-plugin-functional": ">=4",
+    "eslint-plugin-import": ">=2",
+    "eslint-plugin-jest": ">=26",
+    "eslint-plugin-json": ">=3",
+    "eslint-plugin-jsx-a11y": ">=6",
+    "eslint-plugin-react": ">=7",
+    "eslint-plugin-react-hooks": ">=4",
+    "eslint-plugin-react-native": ">=4",
+    "eslint-plugin-react-native-a11y": ">=3",
+    "jest": ">=26",
+    "typescript": ">=4"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-jsx-a11y": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    },
+    "eslint-plugin-react-native": {
+      "optional": true
+    },
+    "eslint-plugin-react-native-a11y": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@types/jest": "28",
@@ -63,6 +81,7 @@
     "eslint-plugin-react": "7",
     "eslint-plugin-react-hooks": "4",
     "eslint-plugin-react-native": "4",
+    "eslint-plugin-react-native-a11y": "^3.2.1",
     "husky": "8",
     "jest": "*",
     "react": "*",

@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unused-modules, functional/immutable-data  */
 module.exports = {
   extends: [
-    './base.js',
+    './react.js',
     'plugin:react-native-a11y/all',
   ],
   plugins: [
@@ -13,14 +13,17 @@ module.exports = {
     'react-native/no-unused-styles': 1,
     'react-native/split-platform-components': 1,
   },
-  globals: {
+  /* globals: {
     fetch: true,
     __DEV__: true,
     __OFFLINE__: true,
     window: true,
-  },
+  }, */
   env: {
     'react-native/react-native': true,
+  },
+  parserOptions: {
+    project: './tsconfig.json',
   },
   settings: {
     'import/resolver': { // to allow for libraries with only .ios.js and .android.js exports without plain .js export
@@ -28,6 +31,12 @@ module.exports = {
         extensions: [
           '.js',
           '.jsx',
+          '.ts',
+          '.tsx',
+          '.ios.ts',
+          '.android.ts',
+          '.native.ts',
+          '.web.js',
           '.ios.js',
           '.android.js',
           '.native.js',
