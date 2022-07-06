@@ -29,8 +29,13 @@ module.exports = {
         '@graphql-eslint/known-fragment-names': 0,
         '@graphql-eslint/known-type-names': 0,
         '@graphql-eslint/lone-anonymous-operation': 0,
+        '@graphql-eslint/naming-convention': [2, {
+          FieldDefinition: 'camelCase', FragmentDefinition: { forbiddenSuffixes: ['Fragment'], style: 'PascalCase' }, allowLeadingUnderscore: true, types: 'PascalCase',
+        }],
         '@graphql-eslint/no-deprecated': 0,
         '@graphql-eslint/no-fragment-cycles': 0,
+        '@graphql-eslint/no-hashtag-description': 0,
+        '@graphql-eslint/no-typename-prefix': 1,
         '@graphql-eslint/no-undefined-variables': 0,
         '@graphql-eslint/no-unreachable-types': 0,
         '@graphql-eslint/no-unused-fragments': 0,
@@ -39,7 +44,7 @@ module.exports = {
         '@graphql-eslint/overlapping-fields-can-be-merged': 0,
         '@graphql-eslint/possible-fragment-spread': 0,
         '@graphql-eslint/provided-required-arguments': 0,
-        '@graphql-eslint/require-description': [1, { FieldDefinition: false, types: true }],
+        '@graphql-eslint/require-description': 0,
         '@graphql-eslint/require-id-when-available': 0,
         '@graphql-eslint/scalar-leafs': 0,
         '@graphql-eslint/strict-id-in-types': 0,
@@ -57,6 +62,7 @@ module.exports = {
       parser: 'yaml-eslint-parser',
       rules: {
         'yml/flow-sequence-bracket-spacing': [2, 'always'],
+        'yml/no-empty-mapping-value': 0,
         'yml/no-multiple-empty-lines': 2,
         'yml/require-string-key': 2,
       },
@@ -66,6 +72,7 @@ module.exports = {
       files: ['*.json', '*.json5', '*.jsonc'],
       parser: 'jsonc-eslint-parser',
       rules: {
+
         'jsonc/array-bracket-newline': ['error',
           {
             minItems: 3,
