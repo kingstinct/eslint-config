@@ -5,6 +5,10 @@ module.exports = {
     './base.js',
     'plugin:react/recommended',
   ],
+  globals: {
+    fetch: true,
+    window: true,
+  },
   plugins: [
     'react',
     'jsx-a11y',
@@ -13,7 +17,7 @@ module.exports = {
   rules: {
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
-    'react/boolean-prop-naming': [1, { rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+', propTypeNames: ['bool', 'mutuallyExclusiveTrueProps'] }],
+    'react/boolean-prop-naming': [1, { propTypeNames: ['bool', 'mutuallyExclusiveTrueProps'], rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+' }],
     'react/display-name': 0,
     'react/function-component-definition': 0,
     'react/jsx-closing-tag-location': 0,
@@ -29,14 +33,7 @@ module.exports = {
     'react/require-default-props': 0,
     'react/sort-comp': 0,
   },
-  globals: {
-    fetch: true,
-    window: true,
-  },
   settings: {
-    'react': {
-      version: 'detect',
-    },
     'import/resolver': { // to allow for libraries with only .ios.js and .android.js exports without plain .js export
       node: {
         extensions: [
@@ -46,6 +43,9 @@ module.exports = {
           '.tsx',
         ],
       },
+    },
+    'react': {
+      version: 'detect',
     },
   },
 }

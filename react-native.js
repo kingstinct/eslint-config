@@ -1,4 +1,7 @@
 module.exports = {
+  env: {
+    'react-native/react-native': true,
+  },
   extends: [
     './react.js',
     'plugin:react-native-a11y/all',
@@ -11,9 +14,6 @@ module.exports = {
     'react-native/no-inline-styles': 1,
     'react-native/no-unused-styles': 1,
     'react-native/split-platform-components': 1,
-  },
-  env: {
-    'react-native/react-native': true,
   },
   settings: {
     'import/resolver': { // to allow for libraries with only .ios.js and .android.js exports without plain .js export

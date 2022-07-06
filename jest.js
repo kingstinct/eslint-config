@@ -1,8 +1,8 @@
 module.exports = {
-  plugins: ['jest'],
   extends: ['plugin:jest/recommended'],
+  plugins: ['jest'],
   rules: {
-    'jest/expect-expect': 2,
     'import/no-extraneous-dependencies': 0,
+    'jest/expect-expect': 2,
   },
 }
