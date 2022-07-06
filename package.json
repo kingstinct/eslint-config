@@ -1,5 +1,5 @@
 {
-  "name": "@kingstinct/eslint",
+  "name": "eslint-config-kingstinct",
   "version": "5.0.0",
   "description": "ESLint configuration for React-native based on Airbnb with some great tweaks",
   "main": "index.js",
@@ -37,7 +37,6 @@
     "@typescript-eslint/parser": "5",
     "eslint": "8",
     "eslint-import-resolver-typescript": "3",
-    "eslint-plugin-eslint-plugin": "4",
     "eslint-plugin-functional": "^4.2.1",
     "eslint-plugin-import": "2",
     "eslint-plugin-jest": "26",
