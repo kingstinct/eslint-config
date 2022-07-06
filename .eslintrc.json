@@ -1,14 +1,21 @@
 {
   "extends": [
-    "./index.js",
+    "./base.js",
     "plugin:eslint-plugin/recommended"
   ],
-  "plugins": [
-    "eslint-plugin"
-  ],
+  "plugins": [ "eslint-plugin" ],
   "overrides": [
     {
-      "files": ["jest.js", "react.js", "react-native.js", "base.js", "expo.js", "index.js", "node16.js"],
+      "files": [
+        "jest.js",
+        "react.js",
+        "react-native.js",
+        "base.js",
+        "expo.js",
+        "index.js",
+        "node16.js",
+        "typescript.js"
+      ],
       "rules": {
         "functional/immutable-data": 0
       }

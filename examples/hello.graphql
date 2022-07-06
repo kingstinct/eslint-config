@@ -1,0 +1,11 @@
+query Hello {
+  world(f: "")
+}
+
+type Hey {
+  world: ID!
+}
+
+type Yo {
+  sdf:sdf
+}

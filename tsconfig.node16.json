@@ -6,10 +6,10 @@
     "noUncheckedIndexedAccess": true,
     "resolveJsonModule": true,
     "strict": true,
-    "lib": ["ES2021"],
+    "lib": [ "ES2021" ],
     "target": "ES2021",
     "skipLibCheck": true,
     "strictNullChecks": true
   },
-  "exclude": ["node_modules"]
+  "exclude": [ "node_modules" ]
 }
