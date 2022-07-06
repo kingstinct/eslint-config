@@ -22,8 +22,8 @@ module.exports = {
     'react/no-unused-prop-types': 1,
     'react/no-unused-state': 0,
     'react/prefer-stateless-function': [1, { ignorePureComponents: true }],
-    'react/prop-types': [2, { skipUndeclared: true }],
-    'react/react-in-jsx-scope': 'off', // suppress errors for missing 'import React' in files
+    'react/prop-types': 0,
+    'react/react-in-jsx-scope': 0, // suppress errors for missing 'import React' in files
     'react/require-default-props': 0,
     'react/sort-comp': 0,
   },
