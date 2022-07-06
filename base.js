@@ -61,7 +61,11 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', { devDependencies: ['src/**/*.test.ts', 'src/**/*.test.tsx'] }],
     'import/no-named-as-default': 0,
     'import/no-named-as-default-member': 0,
-    'import/order': ['error', { 'groups': [['builtin', 'external'], ['parent', 'sibling', 'index'], ['type']], 'newlines-between': 'always' }],
+    'import/order': ['error', {
+      'alphabetize': { caseInsensitive: true, order: 'asc' },
+      'groups': [['builtin', 'external'], ['parent', 'sibling', 'index'], ['type']],
+      'newlines-between': 'always',
+    }],
     'import/prefer-default-export': 0,
     'indent': 0,
     'jsx-quotes': ['error', 'prefer-single'],
