@@ -48,6 +48,7 @@
     "eslint-plugin-react-hooks": ">=4",
     "eslint-plugin-react-native": ">=4",
     "eslint-plugin-react-native-a11y": ">=3",
+    "eslint-config-airbnb-base": ">=15",
     "expo": ">=45",
     "jest": ">=26",
     "typescript": ">=4"
@@ -73,10 +74,12 @@
     }
   },
   "devDependencies": {
+    "@babel/core": "^7.18.6",
     "@types/jest": "28",
     "@typescript-eslint/eslint-plugin": "5",
     "@typescript-eslint/parser": "5",
     "eslint": "8",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-import-resolver-typescript": "3",
     "eslint-plugin-eslint-plugin": "4",
     "eslint-plugin-functional": "^4.2.1",
