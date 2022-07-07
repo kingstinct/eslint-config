@@ -26,13 +26,15 @@ The two main principles are to catch errors early on and to boost productivity (
 
 ## Install
 
-1. Install the correct versions of each package, which are listed by the command:
+1. Install the required peerDependencies:
+
+  The easiest way to install the peer dependencies is using the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
 
   ```sh
-  npm info "eslint-config-kingstinct@latest" peerDependencies
+  npx install-peerdeps -D eslint-config-kingstinct
   ```
 
-  Linux/OSX users can run (if you're using NPM)
+  You can also install it manually (using NPM):
 
   ```sh
   (
@@ -50,26 +52,43 @@ The two main principles are to catch errors early on and to boost productivity (
   )
   ```
 
-  Which produces and runs a command like:
-
-  ```sh
-  npm install --save-dev eslint-config-kingstinct eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
-  ```
-
-  Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
-
-  ```sh
-  npm install -g install-peerdeps
-  install-peerdeps --dev eslint-config-kingstinct
-  ```
-
-  The cli will produce and run a command like:
+  This produces and runs a command like:
 
   ```sh
   npm install --save-dev eslint-config-kingstinct eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
   ```
 
 2. Add `"extends": "eslint-config-kingstinct"` to your .eslintrc (or eslint-config-kingstinct/react or eslint-config-kingstinct/react-native depending on your environment)
+
+3. Install optional dependencies as needed (for React and React Native)
+
+When using React or React Native install the optional peer dependencies manually as needed or run this (similar to above) to install all optionalPeerDependencies:
+
+You can also install it manually (using NPM):
+
+  ```sh
+  (
+    export PKG=eslint-config-kingstinct;
+    npm info "$PKG@latest" optionalPeerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
+  )
+  ```
+
+  or (if you're using yarn)
+
+  ```sh
+  (
+    export PKG=eslint-config-kingstinct;
+    npm info "$PKG@latest" optionalPeerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev "$PKG@latest"
+  )
+  ```
+
+## BONUS: tsconfig.json
+As a convenience we expose a handful of easy-to-use tsconfig.json files, use them like this:
+```json
+{
+  "extends": "eslint-config-kingstinct/tsconfig.expo" // or "eslint-config-kingstinct/tsconfig", "eslint-config-kingstinct/tsconfig.node16"
+}
+```
 
 ## Running tests
 
