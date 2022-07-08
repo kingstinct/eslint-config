@@ -7,7 +7,9 @@
     "module": "CommonJS",
     "strict": true,
     "skipLibCheck": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
   },
   "exclude": [
     "**/*.generated.*",
