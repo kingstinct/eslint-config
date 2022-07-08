@@ -1,13 +1,6 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "allowJs": true,
-    "importsNotUsedAsValues": "error",
-    "noUncheckedIndexedAccess": true,
-    "resolveJsonModule": true,
-    "module": "CommonJS",
-    "strict": true,
-    "skipLibCheck": true,
-    "strictNullChecks": true
-  },
-  "exclude": [ "node_modules" ]
+    "noEmit": true
+  }
 }

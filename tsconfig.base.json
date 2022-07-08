@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "importsNotUsedAsValues": "error",
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "module": "CommonJS",
+    "strict": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true
+  },
+  "exclude": [
+    "**/*.generated.*",
+    "node_modules",
+    ".expo",
+    "build",
+    "**/__generated__/*",
+    "dist"
+  ]
+}

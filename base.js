@@ -47,6 +47,7 @@ module.exports = {
         '@graphql-eslint/require-description': 0,
         '@graphql-eslint/require-id-when-available': 0,
         '@graphql-eslint/scalar-leafs': 0,
+        '@graphql-eslint/selection-set-depth': [0],
         '@graphql-eslint/strict-id-in-types': 0,
         '@graphql-eslint/unique-argument-names': 0,
         '@graphql-eslint/unique-directive-names-per-location': 0,

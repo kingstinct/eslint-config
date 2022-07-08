@@ -21,7 +21,7 @@ module.exports = {
     'react/display-name': 0,
     'react/function-component-definition': 0,
     'react/jsx-closing-tag-location': 0,
-    'react/jsx-filename-extension': [2, { extensions: ['.tsx'] }],
+    'react/jsx-filename-extension': [2, { extensions: ['.jsx', '.tsx'] }],
     'react/jsx-props-no-spreading': 0,
     'react/no-multi-comp': [1, { ignoreStateless: true }],
     'react/no-unstable-nested-components': 1,
