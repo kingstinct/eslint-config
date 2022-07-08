@@ -7,7 +7,7 @@ module.exports = {
   overrides: [
     {
       extends: ['./jest.js'],
-      files: ['**/test/**', '**/tests/**', '**/__tests__/**', 'test/**', '**/*.test.ts', '**/*.test.tsx', '**/*.test.js', '**/*.test.jsx'],
+      files: ['**/test/**', '**/tests/**', '**/__tests__/**', 'test/**', '**/*.test.ts', '**/*.test.tsx', '**/*.test.js', '**/*.test.jsx', '**/jest.setup.ts', '**/jest.setup.js'],
     },
     {
       files: ['babel.config.js', 'metro.config.js', 'jest.config.js'],
