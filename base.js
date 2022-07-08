@@ -6,6 +6,10 @@ module.exports = {
   ignorePatterns: ['**/*.generated.*', 'node_modules', '.expo', 'build', '**/__generated__/*', 'dist', '!/.github', 'web-build'],
   overrides: [
     {
+      extends: ['./typescript'],
+      files: ['*.ts', '*.js', '*.tsx', '*.jsx'],
+    },
+    {
       extends: ['./jest.js'],
       files: ['**/test/**', '**/tests/**', '**/__tests__/**', 'test/**', '**/*.test.ts', '**/*.test.tsx', '**/*.test.js', '**/*.test.jsx', '**/jest.setup.ts', '**/jest.setup.js'],
     },
@@ -96,10 +100,6 @@ module.exports = {
           allowAllPropertiesOnSameLine: false,
         }],
       },
-    },
-    {
-      extends: ['./typescript'],
-      files: ['*.ts', '*.js', '*.tsx', '*.jsx'],
     },
   ],
   plugins: ['import', 'functional', 'sort-keys-fix'],
