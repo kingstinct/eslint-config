@@ -32,7 +32,7 @@
   ],
   "peerDependencies": {
     "@graphql-eslint/eslint-plugin": ">=3",
-    "@types/jest": ">=28",
+    "@types/jest": ">=26",
     "@typescript-eslint/eslint-plugin": ">=5",
     "@typescript-eslint/parser": ">=5",
     "eslint": ">=8",
