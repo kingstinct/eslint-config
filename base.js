@@ -14,6 +14,7 @@ module.exports = {
     'pnpm-lock.yaml',
     'Procfile',
     'web-build',
+    'package-lock.json',
   ],
   overrides: [
     {
