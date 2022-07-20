@@ -3,7 +3,7 @@ module.exports = {
     'airbnb-base',
     'eslint:recommended',
   ],
-  ignorePatterns: ['**/*.generated.*', 'node_modules', '.expo', 'build', '**/__generated__/*', 'dist', '!/.github', 'web-build'],
+  ignorePatterns: ['**/*.generated.*', 'node_modules', '.expo', 'build', '**/__generated__/*', 'dist', '!/.github', 'web-build', 'Procfile'],
   overrides: [
     {
       extends: ['./typescript'],
