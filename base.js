@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       extends: ['./json.js'],
-      files: ['*.json', '*.json5', '*.jsonc'],
+      files: ['*.json', '*.json5', '*.jsonc', '.eslintrc'],
     },
   ],
   plugins: ['import', 'functional'],
