@@ -2,7 +2,7 @@ module.exports = {
   extends: ['plugin:jsonc/recommended-with-json'],
   parser: 'jsonc-eslint-parser',
   rules: {
-
+    'max-len': 0,
     'jsonc/array-bracket-newline': ['error',
       {
         minItems: 3,

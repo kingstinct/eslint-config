@@ -6,5 +6,6 @@ module.exports = {
     'yml/no-empty-mapping-value': 0,
     'yml/no-multiple-empty-lines': 2,
     'yml/require-string-key': 2,
+    'max-len': 0,
   },
 }

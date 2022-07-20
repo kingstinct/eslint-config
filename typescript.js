@@ -14,7 +14,12 @@ module.exports = {
     '@typescript-eslint/consistent-type-imports': 2,
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
-    '@typescript-eslint/indent': ['error', 2, { VariableDeclarator: { const: 3, let: 2, var: 2 }, ignoredNodes: ['JSXAttribute', 'JSXSpreadAttribute'] }],
+    'indent': 0,
+    '@typescript-eslint/indent': ['error', 2, {
+      VariableDeclarator: { const: 3, let: 2, var: 2 },
+      ignoredNodes: ['JSXAttribute', 'JSXSpreadAttribute'],
+      SwitchCase: 1,
+    }],
     '@typescript-eslint/no-empty-function': [1, { allow: ['arrowFunctions'] }],
     '@typescript-eslint/no-empty-interface': 0,
     '@typescript-eslint/no-implied-eval': 0,

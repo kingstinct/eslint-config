@@ -3,7 +3,10 @@ module.exports = {
     'airbnb-base',
     'eslint:recommended',
   ],
-  ignorePatterns: ['**/*.generated.*', 'node_modules', '.expo', 'build', '**/__generated__/*', 'dist', '!/.github', 'web-build', 'Procfile'],
+  ignorePatterns: [
+    '**/*.generated.*',
+    'node_modules', '.expo', 'build', '**/__generated__/*', 'dist', '!/.github',
+    'web-build', 'Procfile'],
   overrides: [
     {
       extends: ['./typescript'],
@@ -34,13 +37,14 @@ module.exports = {
   plugins: ['import', 'functional'],
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
+    'no-nested-ternary': 2,
     'functional/immutable-data': ['error', { ignoreAccessorPattern: '**.current' }],
     'functional/prefer-readonly-type': 'error',
     'functional/prefer-tacit': 'error',
     'global-require': 0,
-    'import/extensions': [2, { graphql: 'always' }],
     'import/no-cycle': 0,
     'import/no-named-as-default': 0,
+    'import/extensions': [2, { graphql: 'always' }],
     'import/no-named-as-default-member': 0,
     'import/order': ['error', {
       'alphabetize': { caseInsensitive: true, order: 'asc' },
@@ -48,11 +52,17 @@ module.exports = {
       'newlines-between': 'always',
     }],
     'import/prefer-default-export': 0,
-    'indent': 0,
     'jsx-quotes': ['error', 'prefer-single'],
     'linebreak-style': ['error', 'unix'],
-    'max-len': ['warn', { code: 200 }],
-    'no-nested-ternary': 0,
+    'max-len': [1, {
+      code: 200,
+      ignoreStrings: true,
+      ignoreRegExpLiterals: true,
+      comments: 120,
+      ignoreTrailingComments: true,
+      ignoreTemplateLiterals: true,
+      ignoreUrls: true,
+    }],
     'no-shadow': 0,
     'no-underscore-dangle': ['error', { allow: ['_id', '__typename'] }],
     'no-unreachable': 2,
