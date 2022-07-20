@@ -20,5 +20,6 @@
         "functional/immutable-data": 0
       }
     }
-  ]
+  ],
+  "rules": { "functional/immutable-data": 0 }
 }

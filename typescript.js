@@ -8,7 +8,7 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
-  plugins: ['@typescript-eslint', 'import', 'functional', 'sort-keys-fix'],
+  plugins: ['@typescript-eslint', 'import', 'functional'],
   rules: {
     '@typescript-eslint/consistent-type-exports': 2,
     '@typescript-eslint/consistent-type-imports': 2,
