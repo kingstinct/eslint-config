@@ -1,4 +1,6 @@
-// This enables the recommended stuff for @graphql-eslint - but disables the stuff dependent on a schema setup (providing some value even before we've set up graphql config etc).
+/* This enables the recommended stuff for @graphql-eslint
+- but disables the stuff dependent on a schema setup
+ (providing some value even before we've set up graphql config etc). */
 
 module.exports = {
   extends: ['plugin:@graphql-eslint/schema-recommended', 'plugin:@graphql-eslint/operations-recommended'],
@@ -13,9 +15,11 @@ module.exports = {
     '@graphql-eslint/known-fragment-names': 0,
     '@graphql-eslint/known-type-names': 0,
     '@graphql-eslint/lone-anonymous-operation': 0,
-    '@graphql-eslint/naming-convention': [2, {
-      FieldDefinition: 'camelCase', FragmentDefinition: { forbiddenSuffixes: ['Fragment'], style: 'PascalCase' }, allowLeadingUnderscore: true, types: 'PascalCase',
-    }],
+    '@graphql-eslint/naming-convention': [
+      2, {
+        FieldDefinition: 'camelCase', FragmentDefinition: { forbiddenSuffixes: ['Fragment'], style: 'PascalCase' }, allowLeadingUnderscore: true, types: 'PascalCase',
+      },
+    ],
     '@graphql-eslint/no-deprecated': 0,
     '@graphql-eslint/no-fragment-cycles': 0,
     '@graphql-eslint/no-hashtag-description': 0,

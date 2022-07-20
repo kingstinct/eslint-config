@@ -6,9 +6,7 @@ module.exports = {
     './react.js',
     'plugin:react-native-a11y/all',
   ],
-  plugins: [
-    'react-native',
-  ],
+  plugins: ['react-native'],
   rules: {
     'react-native/no-color-literals': 0,
     'react-native/no-inline-styles': 1,
