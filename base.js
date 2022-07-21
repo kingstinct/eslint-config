@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     'airbnb-base',
     'eslint:recommended',
+    'plugin:comment-length/recommended',
   ],
   ignorePatterns: [
     '!/.github',
@@ -93,6 +94,20 @@ module.exports = {
         ignoreTrailingComments: true,
         ignoreComments: true,
         ignoreTemplateLiterals: true,
+        ignoreUrls: true,
+      },
+    ],
+    'comment-length/limit-single-line-comments': [
+      'warn',
+      {
+        maxLength: 120,
+        ignoreUrls: true,
+      },
+    ],
+    'comment-length/limit-multi-line-comments': [
+      'warn',
+      {
+        maxLength: 120,
         ignoreUrls: true,
       },
     ],

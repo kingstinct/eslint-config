@@ -3262,6 +3262,11 @@ eslint-module-utils@^2.7.3:
     debug "^3.2.7"
     find-up "^2.1.0"
 
+eslint-plugin-comment-length@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-comment-length/-/eslint-plugin-comment-length-0.6.2.tgz#3237e1b51a395012367484a002588d8a3cf01dbf"
+  integrity sha512-ppFuoNrva1Pr3G759lmwg8Hzsm4cebt0l0m+NOcMr8/z8khkUhkasaVWyFoQ0UF0kd2RrNfH2zvaHjb9n0vuIA==
+
 eslint-plugin-eslint-plugin@4:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-plugin/-/eslint-plugin-eslint-plugin-4.4.0.tgz#52475a3f9635de9990b0c09c201eb2601467daae"
