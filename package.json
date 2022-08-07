@@ -14,8 +14,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "yarn lint",
-    "lint": "yarn lint-only && tsc --noEmit",
+    "test": "pnpm lint",
+    "lint": "pnpm lint-only && tsc --noEmit",
     "lint-only": "eslint .",
     "prepublishOnly": "npm test",
     "prepare": "husky install"
