@@ -51,9 +51,21 @@ module.exports = {
         '*.json', '*.json5', '*.jsonc', '.eslintrc',
       ],
     },
+    {
+      files: 'app.json',
+      rules: {
+        'jsonc/array-bracket-newline': 0,
+      },
+    },
   ],
-  plugins: ['import', 'functional'],
+  plugins: ['import', 'functional', 'unicorn'],
   rules: {
+    'array-element-newline': [
+      'error', {
+        ArrayExpression: 'consistent',
+        ArrayPattern: { minItems: 4, multiline: true },
+      },
+    ],
     'array-bracket-newline': ['error', { multiline: true, minItems: 4 }],
     'comma-dangle': ['error', 'always-multiline'],
     'function-call-argument-newline': ['error', 'consistent'],
@@ -67,6 +79,24 @@ module.exports = {
     'import/no-named-as-default-member': 0,
     'import/no-named-as-default': 0,
     'no-nested-ternary': 2,
+    'unicorn/expiring-todo-comments': [
+      'error',
+      {
+        allowWarningComments: false,
+        ignoreDatesOnPullRequests: true,
+      },
+    ],
+    'unicorn/no-abusive-eslint-disable': 'error',
+    'unicorn/prefer-array-find': 'error',
+    'unicorn/prefer-array-index-of': 'error',
+    'unicorn/prefer-array-some': 'error',
+    'unicorn/prefer-at': 'error',
+    'unicorn/prefer-date-now': 'error',
+    'unicorn/prefer-includes': 'error',
+    'unicorn/prefer-set-has': 'error',
+    'unicorn/prefer-ternary': 'error',
+    'unicorn/no-nested-ternary': 'error',
+    'unicorn/consistent-function-scoping': 'error',
     'object-curly-newline': [
       'error', {
         ObjectExpression: { multiline: true, minProperties: 4, consistent: true },
@@ -111,7 +141,6 @@ module.exports = {
         ignoreUrls: true,
       },
     ],
-    'no-shadow': 0,
     'no-underscore-dangle': ['error', { allow: ['_id', '__typename'] }],
     'no-unreachable': 2,
     'no-use-before-define': 'off',

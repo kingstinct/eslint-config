@@ -27,6 +27,7 @@ module.exports = {
     '@typescript-eslint/no-implied-eval': 0,
     '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
     '@typescript-eslint/no-shadow': 1,
+    'no-shadow': 0,
     '@typescript-eslint/no-unnecessary-type-assertion': 0,
     '@typescript-eslint/no-unsafe-argument': 1,
     '@typescript-eslint/no-unsafe-assignment': 0,
