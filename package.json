@@ -21,6 +21,13 @@
     "prepublishOnly": "pnpm test",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.ts": "eslint --fix",
+    "*.js": "eslint --fix",
+    "*.json": "eslint --fix",
+    "*.graphql": "eslint --fix",
+    "*.yml": "eslint --fix"
+  },
   "packageManager": "pnpm@8.6.9",
   "keywords": [
     "eslint",
@@ -90,6 +97,7 @@
     "graphql": "^16.5.0",
     "husky": "8",
     "jest": "*",
+    "lint-staged": "^13.2.3",
     "react": "*",
     "typescript": "^4.1.2"
   }
