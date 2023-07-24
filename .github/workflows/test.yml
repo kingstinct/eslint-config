@@ -20,9 +20,9 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    # strategy:
-    #   matrix:
-    #     node-version: [ 16.x, 18.x, 20.x ]
+    strategy:
+      matrix:
+        node-version: [ 16.x, 18.x, 20.x ]
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
@@ -39,10 +39,9 @@ jobs:
         id: setup
         with:
           cache: pnpm
-          node-version-file: .nvmrc
+          node-version: ${{ matrix.node-version }}
 
       - name: Install deps
-        id: install
         if: ${{ steps.setup.outputs.cache-hit != 'true' }}
         run: pnpm install --frozen-lockfile
 
@@ -70,7 +69,7 @@ jobs:
   #       id: setup
   #       with:
   #         cache: pnpm
-  #         node-version-file: .nvmrc
+  #         node-
 
   #     - name: Install deps
   #       id: install
@@ -84,9 +83,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     needs: cache-warmer
-    # strategy:
-    #   matrix:
-    #     node-version: [ 16.x, 18.x, 20.x ]
+    strategy:
+      matrix:
+        node-version: [ 16.x, 18.x, 20.x ]
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
@@ -103,10 +102,9 @@ jobs:
         id: setup
         with:
           cache: pnpm
-          node-version-file: .nvmrc
+          node-version: ${{ matrix.node-version }}
 
       - name: Install deps
-        id: install
         run: pnpm install --frozen-lockfile
 
       - name: Typecheck
@@ -117,9 +115,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     needs: cache-warmer
-    # strategy:
-    #   matrix:
-    #     node-version: [ 16.x, 18.x, 20.x ]
+    strategy:
+      matrix:
+        node-version: [ 16.x, 18.x, 20.x ]
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
@@ -136,10 +134,9 @@ jobs:
         id: setup
         with:
           cache: pnpm
-          node-version-file: .nvmrc
+          node-version: ${{ matrix.node-version }}
 
       - name: Install deps
-        id: install
         run: pnpm install --frozen-lockfile
 
       - name: Lint

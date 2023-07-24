@@ -1,5 +1,6 @@
 # eslint-config-kingstinct
 
+[![npm (scoped)](https://img.shields.io/npm/v/eslint-config-kingstinct)](https://www.npmjs.com/package/eslint-config-kingstinct)
 ![CI Status](https://github.com/kingstinct/eslint/workflows/Node.js%20CI/badge.svg)
 
 ## Principles
