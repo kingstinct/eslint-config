@@ -7,6 +7,6 @@ module.exports = {
     'yml/no-multiple-empty-lines': 2,
     'yml/require-string-key': 2,
     'max-len': 0,
-    "comment-length/limit-multi-line-comments": 0
+    'comment-length/limit-multi-line-comments': 0,
   },
 }

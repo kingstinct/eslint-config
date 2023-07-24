@@ -43,5 +43,6 @@ module.exports = {
     '@graphql-eslint/value-literals-of-correct-type': 0,
     '@graphql-eslint/variables-are-input-types': 0,
     '@graphql-eslint/variables-in-allowed-position': 0,
+    'spaced-comment': 0,
   },
 }

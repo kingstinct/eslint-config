@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "importsNotUsedAsValues": "error",
     "noUncheckedIndexedAccess": true,
     "resolveJsonModule": true,
     "module": "CommonJS",

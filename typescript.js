@@ -39,7 +39,6 @@ module.exports = {
     '@typescript-eslint/prefer-includes': 2,
     '@typescript-eslint/promise-function-async': [2],
     '@typescript-eslint/restrict-template-expressions': 0,
-    '@typescript-eslint/sort-type-union-intersection-members': 2,
     '@typescript-eslint/type-annotation-spacing': [2, { after: true, before: false, overrides: { arrow: { after: true, before: true } } }],
     '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
   },
