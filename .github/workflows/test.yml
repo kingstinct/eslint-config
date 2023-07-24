@@ -43,7 +43,7 @@ jobs:
 
       - name: Install deps
         id: install
-        if: ${{ steps.setup.outputs.cache-hit == false }}
+        if: ${{ steps.setup.outputs.cache-hit != 'true' }}
         run: pnpm install --frozen-lockfile
 
   # This workflow contains a single job called "build"
