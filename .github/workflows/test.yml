@@ -20,9 +20,9 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    strategy:
-      matrix:
-        node-version: [ 16.x, 18.x, 20.x ]
+    # strategy:
+    #   matrix:
+    #     node-version: [ 16.x, 18.x, 20.x ]
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
@@ -39,7 +39,7 @@ jobs:
         id: setup
         with:
           cache: pnpm
-          node-version: ${{ matrix.node-version }}
+          node-version-file: .nvmrc
 
       - name: Install deps
         id: install
@@ -70,7 +70,7 @@ jobs:
   #       id: setup
   #       with:
   #         cache: pnpm
-  #         node-version: ${{ matrix.node-version }}
+  #         node-version-file: .nvmrc
 
   #     - name: Install deps
   #       id: install
@@ -84,9 +84,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     needs: cache-warmer
-    strategy:
-      matrix:
-        node-version: [ 16.x, 18.x, 20.x ]
+    # strategy:
+    #   matrix:
+    #     node-version: [ 16.x, 18.x, 20.x ]
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
@@ -103,7 +103,7 @@ jobs:
         id: setup
         with:
           cache: pnpm
-          node-version: ${{ matrix.node-version }}
+          node-version-file: .nvmrc
 
       - name: Install deps
         id: install
@@ -117,9 +117,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     needs: cache-warmer
-    strategy:
-      matrix:
-        node-version: [ 16.x, 18.x, 20.x ]
+    # strategy:
+    #   matrix:
+    #     node-version: [ 16.x, 18.x, 20.x ]
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
@@ -136,7 +136,7 @@ jobs:
         id: setup
         with:
           cache: pnpm
-          node-version: ${{ matrix.node-version }}
+          node-version-file: .nvmrc
 
       - name: Install deps
         id: install
