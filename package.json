@@ -17,9 +17,11 @@
     "test": "pnpm lint",
     "lint": "concurrently \"pnpm lint-only\" \"tsc --noEmit\"",
     "lint-only": "eslint .",
+    "typecheck": "tsc --noEmit",
     "prepublishOnly": "pnpm test",
     "prepare": "husky install"
   },
+  "packageManager": "pnpm@8.6.9",
   "keywords": [
     "eslint",
     "eslintconfig",

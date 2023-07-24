@@ -1,0 +1,48 @@
+name: Publish to NPM
+
+on:
+  workflow_dispatch:
+    inputs:
+      description:
+        description: Description of the release
+        required: true
+        type: string
+      release_type:
+        description: Release type
+        required: true
+        type: choice
+        default: patch
+        options:
+          - patch
+          - minor
+          - major
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    uses: ./.github/workflows/test.yml
+
+  publish-auto:
+    # The type of runner that the job will run on
+    needs: test
+    if: ${{ github.event_name != 'workflow_dispatch' }}
+    uses: Kingstinct/utils/.github/workflows/publish.yml@main
+    secrets:
+      github-token: ${{ secrets.GITHUB_TOKEN }}
+      npm_token: ${{ secrets.npm_token }}
+    with:
+      description: Autorelease
+      release_type: patch
+  publish-manual:
+    # The type of runner that the job will run on
+    needs: test
+    if: ${{ github.event_name == 'workflow_dispatch' }}
+    uses: Kingstinct/utils/.github/workflows/publish.yml@main
+    secrets:
+      github-token: ${{ secrets.GITHUB_TOKEN }}
+      npm_token: ${{ secrets.npm_token }}
+    with:
+      description: ${{ inputs.description }}
+      release_type: ${{ inputs.release_type }}
